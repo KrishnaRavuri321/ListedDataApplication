@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardElevation="4dp"
+app:cardCornerRadius="10dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- User Avatar/Image -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageViewAvatar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="3dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewAvatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_avatar_placeholder" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- User Name -->
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewAvatar1"
+        android:layout_marginStart="16dp"
+        android:text="Full Name"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- User Email -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:layout_alignStart="@id/textViewName"
+        android:layout_marginTop="4dp"
+        android:text="email@example.com"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- Image Upload Icon -->
+    <ImageView
+        android:id="@+id/imageUploadIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_upload"
+        android:contentDescription="Upload Image"
+        android:clickable="true"
+        android:focusable="true"
+         />
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
