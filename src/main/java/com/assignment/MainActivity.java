@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             showImagePickerDialog(user);
         });
         recyclerViewUsers.setLayoutManager(new LinearLayoutManager(this));
-        recyclerViewUsers.setAdapter(userAdapter);
+        recyclerViewUsers.setAdapter(userAdapter); //comment
 
         // Initialize ViewModel
         userViewModel = new ViewModelProvider(this).get(UserViewModel.class);
